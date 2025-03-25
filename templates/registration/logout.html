@@ -1,0 +1,12 @@
+{% extends 'flatpages/default.html' %}
+
+
+{% block title %}
+logout
+{% endblock title %}
+
+<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+{% block content %}
+<h2>Выйти из системы</h2>
+<button><a href="{% url 'login' %}">Выйтти</a></button>
+{% endblock content %}

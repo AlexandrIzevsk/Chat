@@ -1,0 +1,12 @@
+{% extends 'flatpages/default.html' %}
+
+
+{% block title %}
+Confirm error
+{% endblock title %}
+
+<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+{% block content %}
+<h2>Введите верный код</h2>
+<button><a href="{% url 'confirm_signup' %}">Введите правильный код</a></button>
+{% endblock content %}

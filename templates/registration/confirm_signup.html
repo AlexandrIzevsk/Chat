@@ -1,0 +1,17 @@
+{% extends 'flatpages/default.html' %}
+
+
+{% block title %}
+Confirm signup
+{% endblock title %}
+
+<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+{% block content %}
+<h2>Подтверждение регистрации</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="code">Введите код регистрации: </label>
+    <input type="text" name="code" id="code">
+    <input type="submit" value="Отправить">
+</form>
+{% endblock content %}
